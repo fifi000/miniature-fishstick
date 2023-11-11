@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "62586a5f-5880-4d41-8f00-8f3added1e95",
+		"name": "GoalAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21194370"
+	},
+	"item": [
+		{
+			"name": "/goals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}",
+					"host": [
+						"{{base_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:username/goals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}goals/user1",
+					"host": [
+						"{{base_url}}goals"
+					],
+					"path": [
+						"user1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/goals/:goal_id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Gain more weight\",\r\n    \"progress\": 0.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}goals/1",
+					"host": [
+						"{{base_url}}goals"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/goals/:goal_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}goals/1",
+					"host": [
+						"{{base_url}}goals"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/goals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Gain more weight\",\r\n    \"progress\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}goals/1",
+					"host": [
+						"{{base_url}}goals"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000/"
+		}
+	]
+}
