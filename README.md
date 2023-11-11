@@ -58,7 +58,7 @@ This collection interacts with `GoalAPI`, a REST API designed for setting and tr
     
     - Endpoint: `/goals/:goal_id`
     - Purpose: Delete a goal based on its unique ID. This operation is designed to remove a goal from the system when it is no longer relevant or applicable.
-5. **Create Goal **
+5. **Create Goal**
     
     - Endpoint: `/goals/:goal_id`
     - Purpose: Post a new goal based on its unique ID.
